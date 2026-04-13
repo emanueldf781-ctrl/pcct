@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eirunepé - Cultura e História</title><style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #2e7d32;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #1b5e20;
+    }
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav a:hover {
+        background-color: #388e3c;
+    }
+
+    section {
+        padding: 20px;
+        display: none;
+    }
+
+    section.active {
+        display: block;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #2e7d32;
+        color: white;
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+<body><header>
+    <h1>Bem-vindo a Eirunepé</h1>
+    <p>Fortalecendo a cultura e a história local</p>
+</header><nav>
+    <a href="#" onclick="mostrar('inicio')">Início</a>
+    <a href="#" onclick="mostrar('historia')">História</a>
+    <a href="#" onclick="mostrar('imagens')">Imagens</a>
+    <a href="#" onclick="mostrar('atividades')">Atividades</a>
+    <a href="#" onclick="mostrar('festivais')">Festivais</a>
+</nav><section id="inicio" class="active">
+    <div class="container">
+        <h2>Bem-vindo</h2>
+        <p>Este site tem como objetivo valorizar a cultura, a história e as tradições da comunidade de Eirunepé.</p>
+    </div>
+</section><section id="historia">
+    <div class="container">
+        <h2>História de Eirunepé</h2>
+        <p><!-- Coloque aqui a história da sua cidade -->
+        Eirunepé é uma comunidade rica em cultura e tradição. Sua história é marcada por...</p>
+    </div>
+</section><section id="imagens">
+    <div class="container">
+        <h2>Imagens</h2>
+        <p>Algumas imagens da comunidade:</p>
+        <img src="https://via.placeholder.com/800x400" alt="Imagem exemplo">
+    </div>
+</section><section id="atividades">
+    <div class="container">
+        <h2>Atividades</h2>
+        <p>Na comunidade são realizadas diversas atividades como pesca, agricultura e eventos culturais.</p>
+    </div>
+</section><section id="festivais">
+    <div class="container">
+        <h2>Festivais</h2>
+        <p>Os festivais locais representam a cultura e a união da comunidade.</p>
+    </div>
+</section><footer>
+    <p>Projeto de valorização cultural - Eirunepé</p>
+</footer><script>
+    function mostrar(secao) {
+        const secoes = document.querySelectorAll('section');
+        secoes.forEach(s => s.classList.remove('active'));
+        document.getElementById(secao).classList.add('active');
+    }
+</script></body>
+</html>
